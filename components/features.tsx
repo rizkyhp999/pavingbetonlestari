@@ -28,36 +28,45 @@ export default function Features() {
         <div className="pt-12 md:pt-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">Kami Menangani</h1>
-            <p className="text-xl text-gray-600">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur excepteur sint occaecat
-              cupidatat.
+            <h1 className="h2 mb-4">
+              Kami Menangani Paving, Panel Beton dan Fiberglass
+            </h1>
+            <p className="text-4xl text-bold text-gray-600">
+              Hubungi kami :{" "}
+              <a
+                href="https://wa.me/6283160566020"
+                className="text-green-800 hover:text-blue-600 "
+              >
+                0831605660XX
+              </a>
             </p>
           </div>
           {/* Section content */}
         </div>
         <div className="flex flex-wrap justify-center items-center">
-          <Card
-            className="max-w-sm m-5"
-            renderImage={() => (
-              <Image
-                width={500}
-                height={500}
-                src="/images/brosur-5.jpg"
-                alt="image 1"
-              />
-            )}
-          >
-            <h5 className="text-2xl font-bold tracking-tight text-gray-900 ">
-              Paving
-            </h5>
+          <a href="/panel">
+            <Card
+              className="max-w-sm m-5"
+              renderImage={() => (
+                <Image
+                  width={500}
+                  height={500}
+                  src="/images/brosur-5.jpg"
+                  alt="image 1"
+                />
+              )}
+            >
+              <h5 className="text-2xl font-bold tracking-tight text-gray-900 ">
+                Paving
+              </h5>
 
-            <p className="font-normal text-gray-700 dark:text-gray-400">
-              Lebih dari 20 tahun menangani paving beton dengan segala ukuran
-              dan bentuk.
-            </p>
-          </Card>
+              <p className="font-normal text-gray-700 dark:text-gray-400">
+                Lebih dari 20 tahun menangani paving beton dengan segala ukuran
+                dan bentuk.
+              </p>
+            </Card>
+          </a>
+
           <Card
             className="max-w-sm m-5"
             renderImage={() => (
