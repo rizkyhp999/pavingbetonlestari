@@ -5,20 +5,31 @@ import Image from "next/image";
 import { Card } from "flowbite-react";
 export default function page() {
   const images = [
-    "/images/panel/p1.jpg",
-    "/images/panel/p2.jpg",
-    "/images/panel/p3.jpg",
-    "/images/panel/p4.jpg",
-    "/images/panel/p5.jpg",
-    "/images/panel/p6.jpg",
-    "/images/panel/p7.jpg",
-    // "/images/panel/p8.jpg",
-    // "/images/panel/p9.jpg",
-    // "/images/panel/p10.jpg",
-    // "/images/panel/p11.jpg",
-    // "/images/panel/p12.jpg",
+    "/images/lain/p1.jpg",
+    "/images/lain/p2.jpg",
+    "/images/lain/p3.jpg",
+    "/images/lain/p4.jpg",
+    "/images/lain/p5.jpg",
+    "/images/lain/p6.jpg",
+    "/images/lain/p7.jpg",
+    // "/images/lain/p8.jpg",
+    // "/images/lain/p9.jpg",
+    // "/images/lain/p10.jpg",
+    // "/images/lain/p11.jpg",
+    // "/images/lain/p12.jpg",
+    // "/images/lain/p13.jpg",
+    // "/images/lain/p14.jpg",
   ];
-  const captions = ["panel"];
+  const captions = [
+    "Gerbang & Turap",
+    "Taman Kupu-kupu",
+    "Turap",
+    "Irigasi",
+    "Irigasi",
+    "Turap",
+    "Turap",
+    "Turap",
+  ];
   return (
     <section className="relative">
       {/* Section background (needs .relative class on parent and next sibling elements) */}
@@ -51,7 +62,7 @@ export default function page() {
                   alt={`image ${index + 1}`}
                 />
                 <h5 className="text-2xl font-bold text-center tracking-tight text-gray-900 ">
-                  {captions[0]}
+                  {captions[index]}
                 </h5>
               </Card>
             </a>

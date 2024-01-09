@@ -22,11 +22,11 @@ export default function Banner() {
               <span className="italic px-1.5"> : </span>{" "}
               <a
                 className="font-medium hover:underline text-slate-50"
-                href="https://wa.me/6283160566020"
+                href="https://wa.me/62811723830"
                 target="_blank"
                 rel="noreferrer"
               >
-                083160566XXX
+                0811-723-830
               </a>{" "}
             </div>
             <button

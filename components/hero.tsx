@@ -56,7 +56,7 @@ export default function Hero() {
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
-                Paving Beton, Panel Beton dan Fiberglass
+                Paving Beton, Panel Beton, Fiberglass, dan Lainnya
               </p>
             </div>
           </div>

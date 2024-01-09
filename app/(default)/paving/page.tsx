@@ -5,20 +5,20 @@ import Image from "next/image";
 import { Card } from "flowbite-react";
 export default function page() {
   const images = [
-    "/images/panel/p1.jpg",
-    "/images/panel/p2.jpg",
-    "/images/panel/p3.jpg",
-    "/images/panel/p4.jpg",
-    "/images/panel/p5.jpg",
-    "/images/panel/p6.jpg",
-    "/images/panel/p7.jpg",
-    // "/images/panel/p8.jpg",
-    // "/images/panel/p9.jpg",
-    // "/images/panel/p10.jpg",
-    // "/images/panel/p11.jpg",
-    // "/images/panel/p12.jpg",
+    "/images/paving/p1.jpg",
+    "/images/paving/p2.jpg",
+    "/images/paving/p3.jpg",
+    "/images/paving/p4.jpg",
+    "/images/paving/p5.jpg",
+    "/images/paving/p6.jpg",
+    "/images/paving/p7.jpg",
+    "/images/paving/p8.jpg",
+    "/images/paving/p9.jpg",
+    "/images/paving/p10.jpg",
+    "/images/paving/p11.jpg",
+    "/images/paving/p12.jpg",
   ];
-  const captions = ["panel"];
+  const captions = ["Paving"];
   return (
     <section className="relative">
       {/* Section background (needs .relative class on parent and next sibling elements) */}

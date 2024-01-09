@@ -72,7 +72,15 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/lain"
+                  className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                >
+                  Lainnya
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://wa.me/62811723830"
                   className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   Kontak

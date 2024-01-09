@@ -5,20 +5,34 @@ import Image from "next/image";
 import { Card } from "flowbite-react";
 export default function page() {
   const images = [
-    "/images/panel/p1.jpg",
-    "/images/panel/p2.jpg",
-    "/images/panel/p3.jpg",
-    "/images/panel/p4.jpg",
-    "/images/panel/p5.jpg",
-    "/images/panel/p6.jpg",
-    "/images/panel/p7.jpg",
-    // "/images/panel/p8.jpg",
-    // "/images/panel/p9.jpg",
-    // "/images/panel/p10.jpg",
-    // "/images/panel/p11.jpg",
-    // "/images/panel/p12.jpg",
+    "/images/hasilpekerjaan/p1.jpg",
+    "/images/hasilpekerjaan/p2.jpg",
+    "/images/hasilpekerjaan/p3.jpg",
+    "/images/hasilpekerjaan/p4.jpg",
+    "/images/hasilpekerjaan/p5.jpg",
+    "/images/hasilpekerjaan/p6.jpg",
+    "/images/hasilpekerjaan/p7.jpg",
+    "/images/hasilpekerjaan/p8.jpg",
+    "/images/hasilpekerjaan/p9.jpg",
+    "/images/hasilpekerjaan/p10.jpg",
+    "/images/hasilpekerjaan/p11.jpg",
+    // "/images/hasilpekerjaan/p12.jpg",
+    // "/images/hasilpekerjaan/p13.jpg",
+    // "/images/hasilpekerjaan/p14.jpg",
   ];
-  const captions = ["panel"];
+  const captions = [
+    "Panel Beton",
+    "Kanstin",
+    "Panel Beton",
+    "Gerbang",
+    "Panel Beton",
+    "Paving Motif",
+    "Turap",
+    "Speedboat",
+    "Fiberglass",
+    "Kincir Air Tambak Udang & Taman Kupu-kupu",
+    "Irigasi",
+  ];
   return (
     <section className="relative">
       {/* Section background (needs .relative class on parent and next sibling elements) */}
@@ -51,7 +65,7 @@ export default function page() {
                   alt={`image ${index + 1}`}
                 />
                 <h5 className="text-2xl font-bold text-center tracking-tight text-gray-900 ">
-                  {captions[0]}
+                  {captions[index]}
                 </h5>
               </Card>
             </a>

@@ -111,7 +111,16 @@ export default function MobileMenu() {
             </li>
             <li>
               <Link
-                href="/kontak"
+                href="/lain"
+                className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center"
+                onClick={() => setMobileNavOpen(false)}
+              >
+                Lainnya
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://wa.me/62811723830"
                 className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center"
                 onClick={() => setMobileNavOpen(false)}
               >

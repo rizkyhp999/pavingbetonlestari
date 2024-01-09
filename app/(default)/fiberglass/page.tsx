@@ -5,20 +5,37 @@ import Image from "next/image";
 import { Card } from "flowbite-react";
 export default function page() {
   const images = [
-    "/images/panel/p1.jpg",
-    "/images/panel/p2.jpg",
-    "/images/panel/p3.jpg",
-    "/images/panel/p4.jpg",
-    "/images/panel/p5.jpg",
-    "/images/panel/p6.jpg",
-    "/images/panel/p7.jpg",
-    // "/images/panel/p8.jpg",
-    // "/images/panel/p9.jpg",
-    // "/images/panel/p10.jpg",
-    // "/images/panel/p11.jpg",
-    // "/images/panel/p12.jpg",
+    "/images/fiberglass/p1.jpg",
+    "/images/fiberglass/p2.jpg",
+    "/images/fiberglass/p3.jpg",
+    "/images/fiberglass/p4.jpg",
+    "/images/fiberglass/p5.jpg",
+    "/images/fiberglass/p6.jpg",
+    "/images/fiberglass/p7.jpg",
+    "/images/fiberglass/p8.jpg",
+    "/images/fiberglass/p9.jpg",
+    "/images/fiberglass/p10.jpg",
+    "/images/fiberglass/p11.jpg",
+    "/images/fiberglass/p12.jpg",
+    "/images/fiberglass/p13.jpg",
+    "/images/fiberglass/p14.jpg",
   ];
-  const captions = ["panel"];
+  const captions = [
+    "Fiberglass",
+    "Speedboat",
+    "Kincir Air Tambak Udang & Taman Kupu Kupu",
+    "Bebek-bebekan",
+    "Bebek-bebekan",
+    "Bebek-bebekan",
+    "Speedboat",
+    "Speedboat",
+    "Speedboat",
+    "Speedboat",
+    "Speedboat",
+    "Speedboat",
+    "Kano",
+    "Kano",
+  ];
   return (
     <section className="relative">
       {/* Section background (needs .relative class on parent and next sibling elements) */}
@@ -51,7 +68,7 @@ export default function page() {
                   alt={`image ${index + 1}`}
                 />
                 <h5 className="text-2xl font-bold text-center tracking-tight text-gray-900 ">
-                  {captions[0]}
+                  {captions[index]}
                 </h5>
               </Card>
             </a>
