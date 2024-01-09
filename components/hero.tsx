@@ -1,5 +1,5 @@
 "use client";
-import VideoThumb from "@/public/images/hero-image.png";
+import VideoThumb from "@/public/images/hero-image.jpg";
 import ModalVideo from "@/components/modal-video";
 import { Carousel } from "flowbite-react";
 export default function Hero() {
@@ -62,7 +62,7 @@ export default function Hero() {
           </div>
 
           {/* Hero image */}
-          {/* <ModalVideo
+          <ModalVideo
             thumb={VideoThumb}
             thumbWidth={768}
             thumbHeight={432}
@@ -70,9 +70,9 @@ export default function Hero() {
             video="/videos/video.mp4"
             videoWidth={1920}
             videoHeight={1080}
-          /> */}
+          />
 
-          <div className="mx-auto h-56 md:h-[432px] md:w-[768px] ">
+          {/* <div className="mx-auto h-56 md:h-[432px] md:w-[768px] ">
             <Carousel>
               <a href="images/brosur-1.jpg">
                 <img src="images/brosur-1.jpg" alt="..." />
@@ -86,6 +86,7 @@ export default function Hero() {
               </a>
             </Carousel>
           </div>
+           */}
         </div>
       </div>
     </section>
