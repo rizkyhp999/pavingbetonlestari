@@ -45,9 +45,9 @@ export default function Hero() {
               className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4"
               data-aos="zoom-y-out"
             >
-              Make your website{" "}
+              Paving Beton Lestari{" "}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
-                wonderful
+                Lampung
               </span>
             </h1>
             <div className="max-w-3xl mx-auto">
@@ -56,36 +56,13 @@ export default function Hero() {
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
-                Our landing page template works on all devices, so you only have
-                to set it up once, and get beautiful results forever.
+                Paving Beton, Panel Beton dan Fiberglass
               </p>
-              <div
-                className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
-                data-aos="zoom-y-out"
-                data-aos-delay="300"
-              >
-                <div>
-                  <a
-                    className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0"
-                    href="#0"
-                  >
-                    Start free trial
-                  </a>
-                </div>
-                <div>
-                  <a
-                    className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
-                    href="#0"
-                  >
-                    Learn more
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
 
           {/* Hero image */}
-          <ModalVideo
+          {/* <ModalVideo
             thumb={VideoThumb}
             thumbWidth={768}
             thumbHeight={432}
@@ -93,30 +70,20 @@ export default function Hero() {
             video="/videos/video.mp4"
             videoWidth={1920}
             videoHeight={1080}
-          />
+          /> */}
 
-          <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
+          <div className="mx-auto h-56 md:h-[432px] md:w-[768px] ">
             <Carousel>
-              <img
-                src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
-                alt="..."
-              />
-              <img
-                src="https://flowbite.com/docs/images/carousel/carousel-2.svg"
-                alt="..."
-              />
-              <img
-                src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
-                alt="..."
-              />
-              <img
-                src="https://flowbite.com/docs/images/carousel/carousel-4.svg"
-                alt="..."
-              />
-              <img
-                src="https://flowbite.com/docs/images/carousel/carousel-5.svg"
-                alt="..."
-              />
+              <a href="images/brosur-1.jpg">
+                <img src="images/brosur-1.jpg" alt="..." />
+              </a>
+
+              <a href="images/brosur-2.jpg">
+                <img src="images/brosur-2.jpg" alt="..." />
+              </a>
+              <a href="images/brosur-3.jpg">
+                <img src="images/brosur-3.jpg" alt="..." />
+              </a>
             </Carousel>
           </div>
         </div>

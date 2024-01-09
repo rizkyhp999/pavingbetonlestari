@@ -48,10 +48,26 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/paving"
                   className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                 >
-                  Kontak
+                  Paving
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/panel"
+                  className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                >
+                  Panel
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/fiberglass"
+                  className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                >
+                  Fiberglass
                 </Link>
               </li>
               <li>
@@ -59,7 +75,7 @@ export default function Header() {
                   href="/"
                   className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                 >
-                  Tentang Kami
+                  Kontak
                 </Link>
               </li>
             </ul>
