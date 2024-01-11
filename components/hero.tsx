@@ -60,7 +60,6 @@ export default function Hero() {
               </p>
             </div>
           </div>
-
           {/* Hero image */}
           <ModalVideo
             thumb={VideoThumb}
@@ -71,22 +70,29 @@ export default function Hero() {
             videoWidth={1920}
             videoHeight={1080}
           />
-
-          {/* <div className="mx-auto h-56 md:h-[432px] md:w-[768px] ">
-            <Carousel>
-              <a href="images/brosur-1.jpg">
-                <img src="images/brosur-1.jpg" alt="..." />
-              </a>
-
-              <a href="images/brosur-2.jpg">
-                <img src="images/brosur-2.jpg" alt="..." />
-              </a>
-              <a href="images/brosur-3.jpg">
-                <img src="images/brosur-3.jpg" alt="..." />
-              </a>
-            </Carousel>
-          </div>
-           */}
+          <p
+            className="text-xl text-gray-600  text-justify pt-8"
+            data-aos="zoom-y-out"
+            data-aos-delay="150"
+          >
+            Perusahaan percetakan kami di Lampung menyediakan beragam produk
+            konstruksi seperti pagar beton, panel beton, paving beton, dan
+            fiberglass dengan kualitas terbaik. Dalam upaya meningkatkan layanan
+            dan memenuhi kebutuhan pelanggan, kami menyediakan pagar beton
+            precast yang kokoh dan tahan lama. Panel beton kami dirancang dengan
+            estetika tinggi dan ketersediaan berbagai motif, sesuai dengan
+            kebutuhan desain proyek Anda. Paving beton kami tidak hanya
+            menawarkan daya tahan yang optimal, tetapi juga memiliki elemen anti
+            slip yang cocok untuk area luar ruangan.
+            <br />
+            <br />
+            Dengan komitmen kami terhadap kualitas, inovasi, dan layanan
+            pelanggan yang unggul, kami siap menjadi mitra terpercaya dalam
+            memenuhi kebutuhan material konstruksi Anda di Lampung. Temukan
+            produk dan layanan terbaik kami untuk proyek-proyek Anda di situs
+            web kami, dan jangan ragu untuk menghubungi kami untuk informasi
+            lebih lanjut.
+          </p>
         </div>
       </div>
     </section>

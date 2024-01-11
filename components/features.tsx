@@ -27,7 +27,7 @@ export default function Features() {
       <div className="relative  mx-auto px-4 sm:px-6">
         <div className="pt-12 md:pt-20">
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+          <div className="max-w-4xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h2 mb-4">
               Lebih dari 20 Tahun Menangani Paving, Panel Beton, Fiberglass dan
               Lainnya
