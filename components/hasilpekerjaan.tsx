@@ -15,7 +15,7 @@ export default function page() {
     "/images/hasilpekerjaan/p8.jpg",
     "/images/hasilpekerjaan/p9.jpg",
     "/images/hasilpekerjaan/p10.jpg",
-    // "/images/hasilpekerjaan/p11.jpg",
+    "/images/hasilpekerjaan/p11.JPG",
     // "/images/hasilpekerjaan/p12.jpg",
     // "/images/hasilpekerjaan/p13.jpg",
     // "/images/hasilpekerjaan/p14.jpg",
