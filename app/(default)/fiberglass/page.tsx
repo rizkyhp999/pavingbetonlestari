@@ -43,7 +43,7 @@ export default function page() {
       <div className="relative  mx-auto px-4 sm:px-6">
         <div className="pt-12 md:pt-20">
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+          <div className="max-w-3xl mx-auto text-center ">
             <h1 className="h2 mb-4">Hasil Pekerjaan Kami</h1>
             <p className="text-2xl text-bold text-gray-600">
               Hubungi kami :{" "}
