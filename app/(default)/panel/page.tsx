@@ -38,6 +38,29 @@ export default function page() {
               </a>
             </p>
           </div>
+          <p
+            className="text-sm md:text-xl text-gray-600  text-justify pt-8 lg:mx-20 "
+            data-aos="zoom-y-out"
+            data-aos-delay="150"
+          >
+            Perusahaan percetakan kami di Lampung menyediakan beragam produk
+            konstruksi seperti pagar beton, panel beton, paving beton, dan
+            fiberglass dengan kualitas terbaik. Dalam upaya meningkatkan layanan
+            dan memenuhi kebutuhan pelanggan, kami menyediakan pagar beton
+            precast yang kokoh dan tahan lama. Panel beton kami dirancang dengan
+            estetika tinggi dan ketersediaan berbagai motif, sesuai dengan
+            kebutuhan desain proyek Anda. Paving beton kami tidak hanya
+            menawarkan daya tahan yang optimal, tetapi juga memiliki elemen anti
+            slip yang cocok untuk area luar ruangan.
+            <br />
+            <br />
+            Dengan komitmen kami terhadap kualitas, inovasi, dan layanan
+            pelanggan yang unggul, kami siap menjadi mitra terpercaya dalam
+            memenuhi kebutuhan material konstruksi Anda di Lampung. Temukan
+            produk dan layanan terbaik kami untuk proyek-proyek Anda di situs
+            web kami, dan jangan ragu untuk menghubungi kami untuk informasi
+            lebih lanjut.
+          </p>
           <div className="text-[1px] text-white">
             <p>
               Pagar Beton Berkualitas Panel Beton Tahan Lama Paving Beton
