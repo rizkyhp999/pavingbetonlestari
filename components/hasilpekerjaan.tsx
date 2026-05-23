@@ -1,161 +1,88 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
-import { Card } from "flowbite-react";
-export default function page() {
-  const images = [
-    "/images/hasilpekerjaan/p1.jpg",
-    "/images/hasilpekerjaan/p2.jpg",
-    "/images/hasilpekerjaan/p3.jpg",
-    "/images/hasilpekerjaan/p4.jpg",
-    "/images/hasilpekerjaan/p5.jpg",
-    "/images/hasilpekerjaan/p6.jpg",
-    "/images/hasilpekerjaan/p7.jpg",
-    "/images/hasilpekerjaan/p8.jpg",
-    "/images/hasilpekerjaan/p9.jpg",
-    "/images/hasilpekerjaan/p10.jpg",
-    "/images/hasilpekerjaan/p11.JPG",
-    // "/images/hasilpekerjaan/p12.jpg",
-    // "/images/hasilpekerjaan/p13.jpg",
-    // "/images/hasilpekerjaan/p14.jpg",
+
+export default function HasilPekerjaan() {
+  const portfolioItems = [
+    { src: "/images/hasilpekerjaan/p1.jpg", caption: "Panel Beton" },
+    { src: "/images/hasilpekerjaan/p2.jpg", caption: "Kanstin" },
+    { src: "/images/hasilpekerjaan/p3.jpg", caption: "Panel Beton" },
+    { src: "/images/hasilpekerjaan/p4.jpg", caption: "Gerbang" },
+    { src: "/images/hasilpekerjaan/p5.jpg", caption: "Panel Beton" },
+    { src: "/images/hasilpekerjaan/p6.jpg", caption: "Paving Motif" },
+    { src: "/images/hasilpekerjaan/p7.jpg", caption: "Turap" },
+    { src: "/images/hasilpekerjaan/p8.jpg", caption: "Speedboat" },
+    { src: "/images/hasilpekerjaan/p9.jpg", caption: "Fiberglass" },
+    { src: "/images/hasilpekerjaan/p10.jpg", caption: "Kincir Air Tambak Udang & Taman Kupu-kupu" },
+    { src: "/images/hasilpekerjaan/p11.JPG", caption: "Hasil Pekerjaan Lainnya" },
   ];
-  const captions = [
-    "Panel Beton",
-    "Kanstin",
-    "Panel Beton",
-    "Gerbang",
-    "Panel Beton",
-    "Paving Motif",
-    "Turap",
-    "Speedboat",
-    "Fiberglass",
-    "Kincir Air Tambak Udang & Taman Kupu-kupu",
-    // "Irigasi",
-  ];
+
   return (
-    <section className="relative">
-      <div className="text-[1px] text-white">
-        <p>
-          Pagar Beton Berkualitas Panel Beton Tahan Lama Paving Beton Terbaik
-          Produk Fiberglass Pagar Beton Kedaton Panel Beton Lampung Paving Beton
-          Indonesia Fiberglass Kedaton Pagar Beton Murah Panel Beton Murah
-          Paving Beton Murah Fiberglass Murah Pagar Beton Tahan Lama Panel Beton
-          Berkualitas Paving Beton Kedaton Fiberglass Lampung Pagar Beton
-          Lampung Panel Beton Kedaton Paving Beton Lampung Fiberglass Indonesia
-          Pagar Beton Indonesia Panel Beton Indonesia Paving Beton Kedaton
-          Fiberglass Kedaton Pagar Beton Terbaik Panel Beton Terbaik Paving
-          Beton Terbaik Fiberglass Terbaik Pagar Beton Modern Panel Beton Modern
-          Paving Beton Modern Fiberglass Modern Pagar Beton Minimalis Panel
-          Beton Minimalis Paving Beton Minimalis Fiberglass Minimalis Pagar
-          Beton Custom Panel Beton Custom Paving Beton Custom Fiberglass Custom
-          Pagar Beton Desain Unik Panel Beton Desain Unik Paving Beton Desain
-          Unik Fiberglass Desain Unik Pagar Beton Desain Modern Panel Beton
-          Desain Modern Paving Beton Desain Modern Fiberglass Desain Modern
-          Pagar Beton Desain Minimalis Panel Beton Desain Minimalis Paving Beton
-          Desain Minimalis Fiberglass Desain Minimalis Pagar Beton Desain Custom
-          Panel Beton Desain Custom Paving Beton Desain Custom Fiberglass Desain
-          Custom Pagar Beton Harga Terjangkau Panel Beton Harga Terjangkau
-          Paving Beton Harga Terjangkau Fiberglass Harga Terjangkau Pagar Beton
-          Harga Kompetitif Panel Beton Harga Kompetitif Paving Beton Harga
-          Kompetitif Fiberglass Harga Kompetitif Pagar Beton Harga Murah Panel
-          Beton Harga Murah Paving Beton Harga Murah Fiberglass Harga Murah
-          Pagar Beton Harga Ekonomis Panel Beton Harga Ekonomis Paving Beton
-          Harga Ekonomis Fiberglass Harga Ekonomis Pagar Beton Harga Bersaing
-          Panel Beton Harga Bersaing Paving Beton Harga Bersaing Fiberglass
-          Harga Bersaing Pagar Beton Harga Bagus Panel Beton Harga Bagus Paving
-          Beton Harga Bagus Fiberglass Harga Bagus Pagar Beton Harga Pas Panel
-          Beton Harga Pas Paving Beton Harga Pas Fiberglass Harga Pas Pagar
-          Beton Harga Hemat Panel Beton Harga Hemat Paving Beton Harga Hemat
-          Fiberglass Harga Hemat Pagar Beton Harga Diskon Panel Beton Harga
-          Diskon Paving Beton Harga Diskon Fiberglass Harga Diskon Pagar Beton
-          Harga Promo Panel Beton Harga Promo Paving Beton Harga Promo
-          Fiberglass Harga Promo Pagar Beton Harga Spesial Panel Beton Harga
-          Spesial Paving Beton Harga Spesial Fiberglass Harga Spesial
-        </p>
-        <p>
-          Percetakan Pagar Beton Lampung Panel Beton Berkualitas Lampung Paving
-          Beton Terbaik di Lampung Fiberglass Murah Lampung Jasa Percetakan
-          Pagar Beton Panel Beton Tahan Lama Paving Beton dengan Harga
-          Terjangkau Fiberglass dengan Kualitas Terbaik Pagar Beton Berkualitas
-          Panel Beton Lampung Paving Beton Lampung Fiberglass Lampung Pagar
-          Beton Tahan Lama Panel Beton dengan Harga Terjangkau Paving Beton
-          Berkualitas Fiberglass Tahan Lama Jasa Pagar Beton Lampung Jasa Panel
-          Beton Lampung Jasa Paving Beton Lampung Jasa Fiberglass Lampung Pagar
-          Beton dengan Harga Terjangkau Panel Beton Berkualitas Paving Beton
-          Tahan Lama Fiberglass dengan Harga Terjangkau Pagar Beton Lampung
-          Panel Beton Terbaik di Lampung Paving Beton Murah Lampung Fiberglass
-          Terbaik di Lampung Jasa Pagar Beton Jasa Panel Beton Jasa Paving Beton
-          Jasa Fiberglass Pagar Beton Murah Panel Beton Tahan Lama Paving Beton
-          Berkualitas Fiberglass Tahan Lama Pagar Beton Terbaik di Lampung Panel
-          Beton Murah Lampung Paving Beton Terbaik di Lampung Fiberglass Murah
-          Lampung Jasa Percetakan Pagar Beton Lampung Jasa Percetakan Panel
-          Beton Lampung Jasa Percetakan Paving Beton Lampung Jasa Percetakan
-          Fiberglass Lampung Pagar Beton dengan Kualitas Terbaik Panel Beton
-          dengan Kualitas Terbaik Paving Beton dengan Kualitas Terbaik
-          Fiberglass dengan Kualitas Terbaik Pagar Beton Tahan Lama Lampung
-          Panel Beton Tahan Lama Lampung Paving Beton Tahan Lama Lampung
-          Fiberglass Tahan Lama Lampung Pagar Beton Murah Lampung Panel Beton
-          Murah Lampung Paving Beton Murah Lampung Fiberglass Murah Lampung
-          Pagar Beton Harga Terjangkau Lampung Panel Beton Harga Terjangkau
-          Lampung Paving Beton Harga Terjangkau Lampung Fiberglass Harga
-          Terjangkau Lampung Pagar Beton Berkualitas Tinggi Lampung Panel Beton
-          Berkualitas Tinggi Lampung Paving Beton Berkualitas Tinggi Lampung
-          Fiberglass Berkualitas Tinggi Lampung Pagar Beton Terpercaya Lampung
-          Panel Beton Terpercaya Lampung Paving Beton Terpercaya Lampung
-          Fiberglass Terpercaya Lampung Pagar Beton Profesional Lampung Panel
-          Beton Profesional Lampung Paving Beton Profesional Lampung Fiberglass
-          Profesional Lampung Pagar Beton Lampung Terbaik Panel Beton Lampung
-          Terbaik Paving Beton Lampung Terbaik Fiberglass Lampung Terbaik Pagar
-          Beton Lampung Tahan Lama Panel Beton Lampung Tahan Lama Paving Beton
-          Lampung Tahan Lama Fiberglass Lampung Tahan Lama Pagar Beton Lampung
-          Murah Panel Beton Lampung Murah Paving Beton Lampung Murah Fiberglass
-          Lampung Murah Pagar Beton Lampung Harga Terjangkau Panel Beton Lampung
-          Harga Terjangkau Paving Beton Lampung Harga Terjangkau Fiberglass
-          Lampung Harga Terjangkau Pagar Beton Lampung Berkualitas Tinggi Panel
-          Beton Lampung Berkualitas Tinggi Paving Beton Lampung Berkualitas
-          Tinggi Fiberglass Lampung Berkualitas Tinggi Pagar Beton Lampung
-          Terpercaya Panel Beton Lampung Terpercaya Paving Beton Lampung
-          Terpercaya Fiberglass Lampung Terpercaya Pagar Beton Lampung
-          Profesional Panel Beton Lampung Profesional Paving Beton Lampung
-          Profesional Fiberglass Lampung Profesional
-        </p>
-      </div>
-      {/* Section background (needs .relative class on parent and next sibling elements) */}
-      <div className="relative  mx-auto px-4 sm:px-6">
-        <div className="pt-12 md:pt-20">
-          {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">Hasil Pekerjaan Kami</h1>
-            <p className="text-2xl text-bold text-gray-600">
-              Hubungi kami :{" "}
-              <a
-                href="https://wa.me/620811723830"
-                className="text-green-800 hover:text-blue-600 "
-              >
-                0811-723-830
-              </a>
-            </p>
+    <section id="portfolio" className="relative pt-8 pb-10 md:pt-16 md:pb-20 bg-slate-100 overflow-hidden">
+      {/* Decorative Elements */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent"></div>
+      <div className="absolute top-1/2 right-0 w-96 h-96 bg-teal-50/50 rounded-full blur-3xl pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
+
+
+
+      <div className="relative max-w-7xl mx-auto px-5 sm:px-6">
+        
+        {/* Section Header */}
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-20" data-aos="fade-up">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-teal-50 border border-teal-100 text-teal-600 text-sm font-semibold tracking-wide uppercase mb-5 shadow-sm">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+            Portfolio Kami
           </div>
-          {/* Section content */}
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight mb-6 leading-tight">
+            Hasil Pekerjaan Terbaik Kami
+          </h2>
+          <p className="text-lg text-slate-600 leading-relaxed mb-8">
+            Kumpulan proyek paving, panel beton, dan konstruksi fiberglass yang telah sukses kami selesaikan dengan standar kualitas tinggi.
+          </p>
         </div>
-        <div className="flex flex-wrap justify-center items-center">
-          {images.map((imageSrc, index) => (
-            <a key={index} href={imageSrc}>
-              <Card className="max-w-sm m-5">
-                <Image
-                  width={500}
-                  height={500}
-                  src={imageSrc}
-                  alt={`image ${index + 1}`}
-                />
-                <h5 className="text-2xl font-bold text-center tracking-tight text-gray-900 ">
-                  {captions[index]}
+
+        {/* Masonry / Grid Layout for Portfolio */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
+          {portfolioItems.map((item, index) => (
+            <a 
+              key={index} 
+              href={item.src}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative flex flex-col rounded-3xl overflow-hidden bg-slate-100 shadow-sm border border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 aspect-square sm:aspect-[4/3]"
+              data-aos="fade-up"
+              data-aos-delay={(index % 4) * 100}
+            >
+              <Image
+                src={item.src}
+                alt={item.caption}
+                fill
+                className="object-contain p-2 transition-transform duration-700 group-hover:scale-105"
+              />
+              
+              {/* Gradient Overlay for Text Readability */}
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/10 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300"></div>
+              
+              {/* Caption Content */}
+              <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 translate-y-3 group-hover:translate-y-0 transition-transform duration-300">
+                <div className="w-10 h-1 bg-teal-400 mb-4 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100"></div>
+                <h5 className="text-xl sm:text-2xl font-bold text-white drop-shadow-md">
+                  {item.caption}
                 </h5>
-              </Card>
+                <p className="text-white/80 text-sm mt-2 font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-150 flex items-center gap-1">
+                  Lihat Gambar
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </p>
+              </div>
             </a>
           ))}
         </div>
+        
       </div>
     </section>
   );
