@@ -9,6 +9,18 @@
 
 @import 'tailwindcss/utilities';
 
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* Large custom focus outlines for high accessibility */
+  :focus-visible {
+    outline: 3px solid #1E3F20;
+    outline-offset: 2px;
+  }
+}
+
 /* Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive */
 @layer utilities {
     .rtl {
