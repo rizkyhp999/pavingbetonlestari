@@ -12,8 +12,7 @@ export default function Footer() {
           {/* Brand & Description */}
           <div className="flex flex-col gap-6 lg:col-span-2 pr-0 lg:pr-12">
             <div className="flex items-center gap-2">
-              <Logo />
-              <span className="text-xl font-bold text-white tracking-tight">Paving Beton Lestari</span>
+              <Logo light />
             </div>
             <p className="text-slate-400 leading-relaxed">
               Spesialis solusi material konstruksi dan fiberglass terpercaya di Lampung. Lebih dari 20 tahun melayani kebutuhan paving beton, panel beton, hingga pagar precast dengan standar kualitas tertinggi.

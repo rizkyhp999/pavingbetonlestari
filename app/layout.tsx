@@ -19,11 +19,16 @@ export const metadata: Metadata = {
     template: '%s | Paving Beton Lestari Lampung',
     default: 'Paving Beton Lestari Lampung - Kualitas Terjamin',
   },
-  description: "Solusi material konstruksi berkualitas tinggi di Lampung — dari paving beton, panel beton elegan, hingga pagar precast kokoh yang dirancang untuk keandalan jangka panjang.",
-  keywords: ["Paving Beton Lampung", "Panel Beton Lampung", "Pagar Precast", "Fiberglass", "Material Konstruksi"],
+  description: "Paving block, panel beton, dan produk fiberglass berkualitas di Lampung.",
+  keywords: ["Paving Beton Lampung", "Panel Beton Lampung", "Pagar Precast", "Fiberglass", "PBL"],
+  icons: {
+    icon: '/images/pbl-logo.png',
+    shortcut: '/images/pbl-logo.png',
+    apple: '/images/pbl-logo.png',
+  },
   openGraph: {
     title: 'Paving Beton Lestari Lampung',
-    description: 'Solusi material konstruksi berkualitas tinggi di Lampung.',
+    description: 'Paving block, panel beton, dan produk fiberglass berkualitas di Lampung.',
     url: 'https://pavingbetonlestari.com',
     siteName: 'Paving Beton Lestari',
     locale: 'id_ID',
@@ -44,6 +49,7 @@ export default function RootLayout({
           content="wY0RJe4nK4UYICMD1Vs63FK3awqcOnMxxXvo0HXi4hI"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+        <link rel="icon" href="/images/pbl-logo.png" />
       </head>
       <body
         className={`${inter.variable} font-inter antialiased bg-slate-50 text-slate-900 tracking-tight`}

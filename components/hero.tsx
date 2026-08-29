@@ -5,7 +5,7 @@ import AnimatedBackground from "./animated-background";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50/60 pt-20 pb-6 md:pt-28 md:pb-12">
+    <section className="relative overflow-hidden bg-gradient-to-b from-blue-50/70 via-white to-slate-100/90 pt-20 pb-8 md:pt-28 md:pb-16 border-b-2 border-slate-200/80">
       <AnimatedBackground />
       {/* Background decorative blobs */}
       <div
@@ -30,24 +30,24 @@ export default function Hero() {
               </span>
             </h1>
 
+            {/* Mobile View: Hero Image (No text overlay) */}
+            <div className="block lg:hidden w-full my-6 relative rounded-2xl overflow-hidden shadow-xl border border-slate-200/80 group">
+              <div className="relative h-64 sm:h-80 w-full">
+                <Image
+                  src="/images/brosur-3.jpg"
+                  alt="Paving Beton Lestari"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  priority
+                />
+              </div>
+            </div>
+
             {/* Tagline */}
-            <p className="mt-6 text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl">
-              Solusi material konstruksi berkualitas tinggi — dari paving beton , panel
-              beton elegan, hingga pagar precast kokoh yang dirancang untuk
-              keandalan jangka panjang.
+            <p className="mt-3 md:mt-6 text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl">
+              Kami menyediakan paving block, panel beton, dan pagar beton yang kuat, rapi, dan tahan lama. Siap mempercantik dan memperkokoh halaman rumah serta bangunan Anda.
             </p>
 
-            {/* Product badges */}
-            <div className="flex flex-wrap gap-2 mt-7">
-              {["Paving Beton", "Panel Beton", "Pagar Beton", "Fiberglass"].map((label) => (
-                <span
-                  key={label}
-                  className="bg-white border border-slate-200 text-slate-700 text-sm font-medium px-4 py-1.5 rounded-full shadow-sm hover:border-blue-400 transition-colors duration-200"
-                >
-                  {label}
-                </span>
-              ))}
-            </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row flex-wrap gap-4 mt-8 w-full sm:w-auto">
@@ -75,8 +75,8 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* RIGHT: Floating Cards Only */}
-          <div className="lg:col-span-6 relative flex justify-center lg:justify-end mt-10 lg:mt-0" data-aos="fade-left">
+          {/* RIGHT: Image Showcase for Desktop (Clean without text overlay) */}
+          <div className="hidden lg:flex lg:col-span-6 relative items-center justify-center lg:justify-end mt-6 lg:mt-0" data-aos="fade-left">
             {/* SVG Dot grid background */}
             <div className="absolute -top-8 -right-8 w-40 h-40 text-blue-200/50 -z-10 pointer-events-none hidden md:block">
               <svg className="w-full h-full" fill="currentColor">
@@ -89,47 +89,17 @@ export default function Hero() {
               </svg>
             </div>
 
-            {/* Vertical stack of 3 premium floating cards */}
-            <div className="hidden md:flex relative flex-col justify-center gap-3 sm:gap-4 w-full sm:w-3/4 lg:w-2/3 z-10">
-              {[
-                {
-                  title: "Kualitas Terjamin",
-                  icon: (
-                    <svg className="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                    </svg>
-                  ),
-                },
-                {
-                  title: "Produk Berkualitas",
-                  icon: (
-                    <svg className="w-5 h-5 text-cyan-500" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-                    </svg>
-                  ),
-                },
-                {
-                  title: "Tahan Lama & Kuat",
-                  icon: (
-                    <svg className="w-5 h-5 text-amber-500" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 3a9 9 0 00-9 9h18a9 9 0 00-9-9zM3 12v3a2 2 0 002 2h14a2 2 0 002-2v-3M12 3v3M8 6h8" />
-                    </svg>
-                  ),
-                },
-             
-              ].map((item, idx) => (
-                <div
-                  key={idx}
-                  className="bg-white/95 backdrop-blur-sm hover:bg-white p-3 sm:p-4 rounded-xl shadow-lg border border-white/50 flex items-center gap-3 sm:gap-4 transition duration-200 hover:-translate-y-0.5 hover:shadow-xl"
-                >
-                  <div className="flex-shrink-0 p-2 sm:p-2.5 bg-slate-50 rounded-lg sm:rounded-xl border border-slate-100">
-                    {item.icon}
-                  </div>
-                  <span className="text-slate-800 text-xs sm:text-sm font-semibold leading-snug">
-                    {item.title}
-                  </span>
-                </div>
-              ))}
+            {/* Hero Image Container */}
+            <div className="w-full max-w-lg relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200/80 group bg-white p-2.5">
+              <div className="relative h-[400px] w-full rounded-xl overflow-hidden">
+                <Image
+                  src="/images/brosur-3.jpg"
+                  alt="Paving Beton Lestari"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -152,7 +122,7 @@ export default function Hero() {
             },
             {
               value: "500+",
-              label: "Proyek Selesai",
+              label: "Pekerjaan Selesai",
               icon: (
                 <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -161,7 +131,7 @@ export default function Hero() {
             },
             {
               value: "100%",
-              label: "Kualitas Terjamin",
+              label: "Hasil Rapi & Kuat",
               icon: (
                 <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
